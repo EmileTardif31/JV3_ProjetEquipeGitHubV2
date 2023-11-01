@@ -25,6 +25,16 @@ public class GameManager : MonoBehaviour
     // Functions
     // ---------------------------
 
+    void Start()
+    {
+        game.activateTimer = true;
+    }
+
+    void Update()
+    {
+        Timer();
+    }
+
     public void UpdateScore()
     {
         scoreText.text = game.scores + " points";
