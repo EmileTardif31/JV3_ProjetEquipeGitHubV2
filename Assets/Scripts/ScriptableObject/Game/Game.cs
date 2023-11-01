@@ -16,4 +16,14 @@ public class Game : ScriptableObject
     public float currentTime;
     public bool activateTimer;
     public int scores;
+
+    // ---------------------------
+    // Functions
+    // ---------------------------
+
+    void OnEnable()
+    {
+        scores = 0;
+        currentTime = gameDuration;
+    }
 }
