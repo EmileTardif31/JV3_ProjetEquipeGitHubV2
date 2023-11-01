@@ -37,7 +37,7 @@ public class PotScript : MonoBehaviour
         gameManager.UpdateScore();
 
         Instantiate(particle, particleStartPos.position, particle.transform.rotation);
-        //audioSource.GetComponent<RandomAudio>().PlayRandomAudio();
+        audioSource.GetComponent<RandomAudio>().PlayRandomAudio();
         Destroy(droppedObject);
     }
 
