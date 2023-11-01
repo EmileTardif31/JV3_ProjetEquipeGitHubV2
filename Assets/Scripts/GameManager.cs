@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
         Timer();
     }
 
+    
+
     public void UpdateScore()
     {
         scoreText.text = game.scores + " points";
